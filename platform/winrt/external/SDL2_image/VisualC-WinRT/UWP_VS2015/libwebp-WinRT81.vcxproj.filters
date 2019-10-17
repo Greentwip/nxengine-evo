@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source FIles">
+      <UniqueIdentifier>{ef277d78-76c2-470e-ac1e-6d8861c405fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source FIles\dec">
+      <UniqueIdentifier>{1adfe3db-54a7-46b5-83b5-a7d05e118a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source FIles\dsp">
+      <UniqueIdentifier>{d82e3aae-b1bf-41fa-b77d-8b4d6247cd8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source FIles\enc">
+      <UniqueIdentifier>{7562a867-fa48-4c4d-8573-47ed9f95cab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source FIles\utils">
+      <UniqueIdentifier>{423096ea-b389-44de-98dd-4aa17703b494}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\alpha_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\buffer_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\frame_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\idec_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\io_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\quant_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\tree_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\vp8_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\vp8l_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dec\webp_dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\cpu.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\dec.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\dec_neon.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\dec_sse2.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\enc_neon.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\enc_sse2.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\lossless.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\upsampling.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\upsampling_neon.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\upsampling_sse2.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\dsp\yuv.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\alpha_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\analysis_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\backward_references_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\config_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\cost_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\filter_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\frame_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\histogram_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\iterator_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\picture_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\quant_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\syntax_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\token_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\tree_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\vp8l_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\enc\webp_enc.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\bit_reader_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\bit_writer_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\color_cache_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\filters_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\huffman_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\huffman_encode_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\quant_levels_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\quant_levels_dec_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\rescaler_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\thread_utils.c" />
+    <ClCompile Include="..\..\external\libwebp-1.0.2\src\utils\utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dec\alphai_dec.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dec\common_dec.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dec\vp8_dec.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dec\vp8i_dec.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dec\vp8li_dec.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dec\webpi_dec.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dsp\dsp.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dsp\lossless.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\dsp\yuv.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\enc\backward_references_enc.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\enc\cost_enc.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\enc\histogram_enc.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\enc\vp8i_enc.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\enc\vp8li_enc.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\bit_reader_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\bit_writer_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\color_cache_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\filters_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\huffman_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\huffman_encode_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\quant_levels_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\quant_levels_dec_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\rescaler_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\thread_utils.h" />
+    <ClInclude Include="..\..\external\libwebp-1.0.2\src\utils\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\libwebp.def" />
+  </ItemGroup>
+</Project>

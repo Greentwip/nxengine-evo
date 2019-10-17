@@ -32,9 +32,9 @@
 #endif
 
 /* Include system network headers */
-#if defined(__WIN32__) || defined(WIN32)
+#if defined(__WIN32__) || defined(WIN32) || defined(WINAPI_FAMILY) 
 #define __USE_W32_SOCKETS
-#ifdef _WIN64
+#if defined(_WIN64) || (WINAPI_FAMILY == WINAPI_FAMILY_APP)
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #else

@@ -145,6 +145,7 @@ std::string ResourceManager::getLocalizedPath(const std::string &filename)
 
 #endif
 
+  #if !(defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)) 
   if (!_mod.empty())
   {
     _paths.push_back("data/mods/" + _mod + "/lang/" + std::string(settings->language) + "/" + filename);
@@ -152,6 +153,16 @@ std::string ResourceManager::getLocalizedPath(const std::string &filename)
   }
   _paths.push_back("data/lang/" + std::string(settings->language) + "/" + filename);
   _paths.push_back("data/" + filename);
+  #else // UWP
+    if (!_mod.empty())
+	{
+		_paths.push_back("Assets/data/mods/" + _mod + "/lang/" + std::string(settings->language) + "/" + filename);
+		_paths.push_back("Assets/data/mods/" + _mod + "/" + filename);
+	}
+	_paths.push_back("Assets/data/lang/" + std::string(settings->language) + "/" + filename);
+	_paths.push_back("Assets/data/" + filename);
+  #endif
+
 
   for (auto &_tryPath: _paths)
   {
@@ -233,11 +244,17 @@ std::string ResourceManager::getPathForDir(const std::string &dir)
 
 #endif
 
-#if !defined(__VITA__) and !defined(__SWITCH__)
+#if !defined(__VITA__) and !defined(__SWITCH__) and !(defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)) // UWP
   if (!_mod.empty())
     _paths.push_back("data/mods/" + _mod + "/" + dir);
   _paths.push_back("data/" + dir);
+#else // UWP
+  if (!_mod.empty())
+    _paths.push_back("Assets/data/mods/" + _mod + "/" + dir);
+  _paths.push_back("Assets/data/" + dir);
 #endif
+
+
 
   for (auto &_tryPath: _paths)
   {
