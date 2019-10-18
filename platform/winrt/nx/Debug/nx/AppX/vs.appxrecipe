@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-6N89GMS</Machine>
+    <WindowsUser>Greentwip</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|Win32</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>75ad1d72-4aa8-4f09-933a-97f74491cff8</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Greentwip</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Source\nxengine-evo\platform\winrt\nx\nx\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Source\nxengine-evo\platform\winrt\nx\Debug\nx\AppX</LayoutDir>
+    <RegisteredManifestChecksum>628930C0C6388107A1D0742B05E7DFC72AA5670E13EE6687AEC3ED704A56659D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>75ad1d72-4aa8-4f09-933a-97f74491cff8_1.0.0.0_x86__qsr2xs8hhwd8p</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>75ad1d72-4aa8-4f09-933a-97f74491cff8_qsr2xs8hhwd8p!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>75ad1d72-4aa8-4f09-933a-97f74491cff8</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Greentwip</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\nx\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-17T23:55:03.323</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\nx\nx.exe">
+      <PackagePath>nx.exe</PackagePath>
+      <Modified>2019-10-17T23:53:47.438</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\nx\nx.winmd">
+      <PackagePath>nx.winmd</PackagePath>
+      <Modified>2019-10-17T23:05:57.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit01.bmp">
+      <PackagePath>Assets\data\endpic\credit01.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit01m.bmp">
+      <PackagePath>Assets\data\endpic\credit01m.bmp</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit02.bmp">
+      <PackagePath>Assets\data\endpic\credit02.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit02m.bmp">
+      <PackagePath>Assets\data\endpic\credit02m.bmp</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit03.bmp">
+      <PackagePath>Assets\data\endpic\credit03.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit03m.bmp">
+      <PackagePath>Assets\data\endpic\credit03m.bmp</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit04.bmp">
+      <PackagePath>Assets\data\endpic\credit04.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit05.bmp">
+      <PackagePath>Assets\data\endpic\credit05.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit06.bmp">
+      <PackagePath>Assets\data\endpic\credit06.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit07.bmp">
+      <PackagePath>Assets\data\endpic\credit07.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit08.bmp">
+      <PackagePath>Assets\data\endpic\credit08.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit09.bmp">
+      <PackagePath>Assets\data\endpic\credit09.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit10.bmp">
+      <PackagePath>Assets\data\endpic\credit10.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit11.bmp">
+      <PackagePath>Assets\data\endpic\credit11.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit12.bmp">
+      <PackagePath>Assets\data\endpic\credit12.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit14.bmp">
+      <PackagePath>Assets\data\endpic\credit14.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit15.bmp">
+      <PackagePath>Assets\data\endpic\credit15.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit16.bmp">
+      <PackagePath>Assets\data\endpic\credit16.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit17.bmp">
+      <PackagePath>Assets\data\endpic\credit17.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\credit18.bmp">
+      <PackagePath>Assets\data\endpic\credit18.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\endpic\pixel.bmp">
+      <PackagePath>Assets\data\endpic\pixel.bmp</PackagePath>
+      <Modified>2019-04-08T15:29:25.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\russian\endpic\pixel.bmp">
+      <PackagePath>Assets\data\lang\russian\endpic\pixel.bmp</PackagePath>
+      <Modified>2019-04-07T22:22:27.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\font_1_0.png">
+      <PackagePath>Assets\data\font_1_0.png</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\font_2_0.png">
+      <PackagePath>Assets\data\font_2_0.png</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\font_3_0.png">
+      <PackagePath>Assets\data\font_3_0.png</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\font_3_1.png">
+      <PackagePath>Assets\data\font_3_1.png</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\font_4_0.png">
+      <PackagePath>Assets\data\font_4_0.png</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\font_5_0.png">
+      <PackagePath>Assets\data\font_5_0.png</PackagePath>
+      <Modified>2019-04-08T15:27:41.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_1_0.png">
+      <PackagePath>Assets\data\lang\chinese\font_1_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:07.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_2_0.png">
+      <PackagePath>Assets\data\lang\chinese\font_2_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_3_0.png">
+      <PackagePath>Assets\data\lang\chinese\font_3_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:13.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_3_1.png">
+      <PackagePath>Assets\data\lang\chinese\font_3_1.png</PackagePath>
+      <Modified>2019-04-07T22:22:13.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_4_0.png">
+      <PackagePath>Assets\data\lang\chinese\font_4_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_4_1.png">
+      <PackagePath>Assets\data\lang\chinese\font_4_1.png</PackagePath>
+      <Modified>2019-04-07T22:22:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_4_2.png">
+      <PackagePath>Assets\data\lang\chinese\font_4_2.png</PackagePath>
+      <Modified>2019-04-07T22:22:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_5_0.png">
+      <PackagePath>Assets\data\lang\chinese\font_5_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_5_1.png">
+      <PackagePath>Assets\data\lang\chinese\font_5_1.png</PackagePath>
+      <Modified>2019-04-07T22:22:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_5_2.png">
+      <PackagePath>Assets\data\lang\chinese\font_5_2.png</PackagePath>
+      <Modified>2019-04-07T22:22:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_5_3.png">
+      <PackagePath>Assets\data\lang\chinese\font_5_3.png</PackagePath>
+      <Modified>2019-04-07T22:22:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\chinese\font_5_4.png">
+      <PackagePath>Assets\data\lang\chinese\font_5_4.png</PackagePath>
+      <Modified>2019-04-07T22:22:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\french\font_1_0.png">
+      <PackagePath>Assets\data\lang\french\font_1_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\french\font_2_0.png">
+      <PackagePath>Assets\data\lang\french\font_2_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\french\font_3_0.png">
+      <PackagePath>Assets\data\lang\french\font_3_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\french\font_4_0.png">
+      <PackagePath>Assets\data\lang\french\font_4_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\french\font_5_0.png">
+      <PackagePath>Assets\data\lang\french\font_5_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\german\font_1_0.png">
+      <PackagePath>Assets\data\lang\german\font_1_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:17.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\german\font_2_0.png">
+      <PackagePath>Assets\data\lang\german\font_2_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:17.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\german\font_3_0.png">
+      <PackagePath>Assets\data\lang\german\font_3_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:17.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\german\font_4_0.png">
+      <PackagePath>Assets\data\lang\german\font_4_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:17.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\german\font_5_0.png">
+      <PackagePath>Assets\data\lang\german\font_5_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:17.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\italian\font_1_0.png">
+      <PackagePath>Assets\data\lang\italian\font_1_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\italian\font_2_0.png">
+      <PackagePath>Assets\data\lang\italian\font_2_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\italian\font_3_0.png">
+      <PackagePath>Assets\data\lang\italian\font_3_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\italian\font_4_0.png">
+      <PackagePath>Assets\data\lang\italian\font_4_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\italian\font_5_0.png">
+      <PackagePath>Assets\data\lang\italian\font_5_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_1_0.png">
+      <PackagePath>Assets\data\lang\japanese\font_1_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_2_0.png">
+      <PackagePath>Assets\data\lang\japanese\font_2_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_3_0.png">
+      <PackagePath>Assets\data\lang\japanese\font_3_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:25.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_3_1.png">
+      <PackagePath>Assets\data\lang\japanese\font_3_1.png</PackagePath>
+      <Modified>2019-04-07T22:22:25.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_4_0.png">
+      <PackagePath>Assets\data\lang\japanese\font_4_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:25.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_4_1.png">
+      <PackagePath>Assets\data\lang\japanese\font_4_1.png</PackagePath>
+      <Modified>2019-04-07T22:22:25.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_4_2.png">
+      <PackagePath>Assets\data\lang\japanese\font_4_2.png</PackagePath>
+      <Modified>2019-04-07T22:22:25.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_5_0.png">
+      <PackagePath>Assets\data\lang\japanese\font_5_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_5_1.png">
+      <PackagePath>Assets\data\lang\japanese\font_5_1.png</PackagePath>
+      <Modified>2019-04-07T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_5_2.png">
+      <PackagePath>Assets\data\lang\japanese\font_5_2.png</PackagePath>
+      <Modified>2019-04-07T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\japanese\font_5_3.png">
+      <PackagePath>Assets\data\lang\japanese\font_5_3.png</PackagePath>
+      <Modified>2019-04-07T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\polish\font_1_0.png">
+      <PackagePath>Assets\data\lang\polish\font_1_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:27.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\polish\font_2_0.png">
+      <PackagePath>Assets\data\lang\polish\font_2_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:27.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\polish\font_3_0.png">
+      <PackagePath>Assets\data\lang\polish\font_3_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:27.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\polish\font_4_0.png">
+      <PackagePath>Assets\data\lang\polish\font_4_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:27.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\polish\font_5_0.png">
+      <PackagePath>Assets\data\lang\polish\font_5_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:27.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\russian\font_1_0.png">
+      <PackagePath>Assets\data\lang\russian\font_1_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\russian\font_2_0.png">
+      <PackagePath>Assets\data\lang\russian\font_2_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\russian\font_3_0.png">
+      <PackagePath>Assets\data\lang\russian\font_3_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\russian\font_4_0.png">
+      <PackagePath>Assets\data\lang\russian\font_4_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\data\lang\russian\font_5_0.png">
+      <PackagePath>Assets\data\lang\russian\font_5_0.png</PackagePath>
+      <Modified>2019-04-07T22:22:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-07-06T00:14:43.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-07-06T00:14:43.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-07-06T00:14:43.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-07-06T00:14:43.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-07-06T00:14:43.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-07-06T00:14:43.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\nx\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-07-06T00:14:43.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\SDL_gfx-UWP\SDL_gfx-UWP.dll">
+      <PackagePath>SDL_gfx-UWP.dll</PackagePath>
+      <Modified>2019-10-17T22:13:54.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\SDL-UWP\SDL2.dll">
+      <PackagePath>SDL2.dll</PackagePath>
+      <Modified>2019-10-17T20:32:16.457</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\jpeg-WinRT81\jpeg.dll">
+      <PackagePath>jpeg.dll</PackagePath>
+      <Modified>2019-10-17T21:05:17.403</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\libpng-WinRT81\libpng.dll">
+      <PackagePath>libpng.dll</PackagePath>
+      <Modified>2019-10-17T22:06:08.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\zlib-WinRT81\zlib.dll">
+      <PackagePath>zlib.dll</PackagePath>
+      <Modified>2019-10-17T21:04:58.345</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\libwebp-WinRT81\libwebp.dll">
+      <PackagePath>libwebp.dll</PackagePath>
+      <Modified>2019-10-17T22:03:23.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\SDL_image-WinRT81\SDL2_image.dll">
+      <PackagePath>SDL2_image.dll</PackagePath>
+      <Modified>2019-10-17T22:07:19.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\libogg_dynamic-UWP\libogg.dll">
+      <PackagePath>libogg.dll</PackagePath>
+      <Modified>2019-10-17T22:07:46.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\libvorbisfile_dynamic-UWP\libvorbisfile.dll">
+      <PackagePath>libvorbisfile.dll</PackagePath>
+      <Modified>2019-10-17T22:12:07.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\libvorbis_dynamic-UWP\libvorbis.dll">
+      <PackagePath>libvorbis.dll</PackagePath>
+      <Modified>2019-10-17T22:11:40.519</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\SDL_mixer-UWP\SDL2_mixer.dll">
+      <PackagePath>SDL2_mixer.dll</PackagePath>
+      <Modified>2019-10-17T22:12:29.582</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\SDL_net-UWP\SDL_net-UWP.dll">
+      <PackagePath>SDL_net-UWP.dll</PackagePath>
+      <Modified>2019-10-17T20:57:57.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\SDL_ttf-WinRT81\SDL2_ttf.dll">
+      <PackagePath>SDL2_ttf.dll</PackagePath>
+      <Modified>2019-10-17T22:20:18.656</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2018-10-23T07:41:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\nxengine-evo\platform\winrt\nx\Debug\nx\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-10-17T23:54:58.729</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
