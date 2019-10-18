@@ -17,7 +17,7 @@ A somewhat upgraded/refactored version of [NXEngine](http://nxengine.sourceforge
 ![Screenshot](https://raw.githubusercontent.com/nxengine/nxengine-evo/master/screenshot.png)
 
 ## Running the game
- * Check the wiki for [Linux](https://github.com/nxengine/nxengine-evo/wiki/Building-on-Linux), [macOS](https://github.com/nxengine/nxengine-evo/wiki/Building-on-macOS), and [Windows](https://github.com/nxengine/nxengine-evo/wiki/Building-on-Windows)-specific instructions if you'd like to build from source.
+ * Check the wiki for [Linux](https://github.com/nxengine/nxengine-evo/wiki/Building-on-Linux), [macOS](https://github.com/nxengine/nxengine-evo/wiki/Building-on-macOS), [Windows](https://github.com/nxengine/nxengine-evo/wiki/Building-on-Windows) and [UWP](https://github.com/Greentwip/nxengine-evo/wiki/Building-for-UWP) instructions if you'd like to build from source.
  * Check the [Releases](https://github.com/nxengine/nxengine-evo/releases) page and download the latest version if you'd rather not build it yourself.
 
 ## Differences from the original version of NXEngine:
