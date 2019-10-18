@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="com.greentwip.cavestory" Publisher="CN=20CC192E-7CE9-4070-8839-E1D1474BB0C4" Version="1.0.0.0" />
+  <Identity Name="com.greentwip.cavestory" Publisher="CN=20CC192E-7CE9-4070-8839-E1D1474BB0C4" Version="1.0.2.0" />
   <mp:PhoneIdentity PhoneProductId="c82e6856-36d0-43ee-9e38-f585f4659502" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Cave Story</DisplayName>
@@ -16,8 +16,8 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="nx.App">
       <uap:VisualElements DisplayName="Cave Story" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="nx" BackgroundColor="transparent">
-        <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\BadgeLogo.png" />
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square150x150Logo.png">
+        <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\Square44x44Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square310x310Logo" />
           </uap:ShowNameOnTiles>

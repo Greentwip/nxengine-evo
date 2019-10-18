@@ -134,7 +134,7 @@
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundle>Always</AppxBundle>
-    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x86|x64|arm|arm64</AppxBundlePlatforms>
     <PackageCertificateThumbprint>892331EF22D4438E797651F6EE06348CD625C0D6</PackageCertificateThumbprint>
     <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
     <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
@@ -252,9 +252,6 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Image Include="Assets\BadgeLogo.scale-100.png">
-      <DeploymentContent>true</DeploymentContent>
-    </Image>
     <Image Include="Assets\data\endpic\credit01.bmp" />
     <Image Include="Assets\data\endpic\credit01m.bmp" />
     <Image Include="Assets\data\endpic\credit02.bmp" />
@@ -342,7 +339,16 @@
     <Image Include="Assets\Square150x150Logo.scale-400.png">
       <DeploymentContent>true</DeploymentContent>
     </Image>
+    <Image Include="Assets\Square310x310Logo.scale-100.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-100.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
     <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
     <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Image Include="Assets\StoreLogo.png" />
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
