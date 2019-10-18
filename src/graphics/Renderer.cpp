@@ -140,7 +140,10 @@ bool Renderer::initVideo()
     return false;
   }
 
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP) // UWP
   SDL_RenderSetLogicalSize(_renderer, width, height);
+#endif
+  
 
   LOG_INFO("Renderer::initVideo: using: {} renderer", info.name);
   return true;
