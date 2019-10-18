@@ -2,6 +2,7 @@
 #include <cassert>
 // graphics routines
 #include "../ResourceManager.h"
+#include "../Utils/Logger.h"
 #include "../config.h"
 #include "../game.h"
 #include "../map.h"
@@ -11,12 +12,11 @@
 #include "Renderer.h"
 #include "nx_icon.h"
 #include "pngfuncs.h"
-#include "../Utils/Logger.h"
 
 #include <SDL.h>
 #include <cstdlib>
-#include <sstream>
 #include <iomanip>
+#include <sstream>
 
 #if defined(__VITA__)
 #include <vita2d.h>
@@ -69,16 +69,20 @@ bool Renderer::isWindowVisible()
 
 bool Renderer::initVideo()
 {
+#if !(defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP))
   uint32_t window_flags = SDL_WINDOW_SHOWN;
+#else // UWP
+  uint32_t window_flags = SDL_WINDOW_RESIZABLE | SDL_WINDOW_SHOWN;
+#endif
 
   const NXE::Graphics::gres_t *res = getResolutions();
 
   uint32_t width  = res[_current_res].width;
   uint32_t height = res[_current_res].height;
-  scale        = res[_current_res].scale;
-  screenHeight = res[_current_res].base_height;
-  screenWidth  = res[_current_res].base_width;
-  widescreen   = res[_current_res].widescreen;
+  scale           = res[_current_res].scale;
+  screenHeight    = res[_current_res].base_height;
+  screenWidth     = res[_current_res].base_width;
+  widescreen      = res[_current_res].widescreen;
 
   if (_window)
   {
@@ -136,6 +140,8 @@ bool Renderer::initVideo()
     return false;
   }
 
+  SDL_RenderSetLogicalSize(_renderer, width, height);
+
   LOG_INFO("Renderer::initVideo: using: {} renderer", info.name);
   return true;
 }
@@ -173,18 +179,18 @@ bool Renderer::setResolution(int r, bool restoreOnFailure)
 
   if (r == 0)
   {
-    scale = 1;
+    scale      = 1;
     widescreen = false;
   }
   else
   {
     const NXE::Graphics::gres_t *res = getResolutions();
-    scale        = res[r].scale;
-    screenHeight = res[r].base_height;
-    screenWidth  = res[r].base_width;
-    widescreen   = res[r].widescreen;
-    width        = res[r].width;
-    height       = res[r].height;
+    scale                            = res[r].scale;
+    screenHeight                     = res[r].base_height;
+    screenWidth                      = res[r].base_width;
+    widescreen                       = res[r].widescreen;
+    width                            = res[r].width;
+    height                           = res[r].height;
   }
 
   LOG_INFO("Setting scaling {}", scale);
@@ -205,30 +211,31 @@ bool Renderer::setResolution(int r, bool restoreOnFailure)
 const Graphics::gres_t *Renderer::getResolutions()
 {
   static NXE::Graphics::gres_t res[]
-      = {//      description, screen_w, screen_h, render_w, render_h, scale_factor, widescreen, enabled
-         // 4:3
-         {(char *)"---", 0, 0, 0, 0, 1, false, true},
+      = { //      description, screen_w, screen_h, render_w, render_h, scale_factor, widescreen, enabled
+          // 4:3
+          {(char *)"---", 0, 0, 0, 0, 1, false, true},
 #if defined(__VITA__)
-         {(char *)"960x544", 960, 544, 480, 272, 2, true, true},
+          {(char *)"960x544", 960, 544, 480, 272, 2, true, true},
 #elif defined(__SWITCH__)
-         {(char *)"1920x1080", 1920, 1080, 480, 270, 4, true, true},
+          {(char *)"1920x1080", 1920, 1080, 480, 270, 4, true, true},
 #else
-         {(char *)"320x240", 320, 240, 320, 240, 1, false, true},
-         {(char *)"640x480", 640, 480, 320, 240, 2, false, true},
-         //        {(char*)"800x600",   800,      600,      320,      240,      2.5,          false,      true },
-         //        //requires float scalefactor
-         {(char *)"1024x768", 1024, 768, 340, 256, 3, false, true},
-         {(char *)"1280x1024", 1280, 1024, 320, 256, 4, false, true},
-         {(char *)"1600x1200", 1600, 1200, 320, 240, 5, false, true},
-         // widescreen
-         {(char *)"480x272", 480, 272, 480, 272, 1, true, true},
-         {(char *)"1360x768", 1360, 768, 454, 256, 3, true, true},
-         {(char *)"1366x768", 1366, 768, 455, 256, 3, true, true},
-         {(char *)"1440x900", 1440, 900, 480, 300, 3, true, true},
-         {(char *)"1600x900", 1600, 900, 533, 300, 3, true, true},
-         {(char *)"1920x1080", 1920, 1080, 480, 270, 4, true, true},
+          {(char *)"320x240", 320, 240, 320, 240, 1, false, true},
+          {(char *)"640x480", 640, 480, 320, 240, 2, false, true},
+          //        {(char*)"800x600",   800,      600,      320,      240,      2.5,          false,      true },
+          //        //requires float scalefactor
+          {(char *)"1024x768", 1024, 768, 340, 256, 3, false, true},
+          {(char *)"1280x1024", 1280, 1024, 320, 256, 4, false, true},
+          {(char *)"1600x1200", 1600, 1200, 320, 240, 5, false, true},
+          // widescreen
+          {(char *)"480x272", 480, 272, 480, 272, 1, true, true},
+          {(char *)"1360x768", 1360, 768, 454, 256, 3, true, true},
+          {(char *)"1366x768", 1366, 768, 455, 256, 3, true, true},
+          {(char *)"1440x900", 1440, 900, 480, 300, 3, true, true},
+          {(char *)"1600x900", 1600, 900, 533, 300, 3, true, true},
+          {(char *)"1920x1080", 1920, 1080, 480, 270, 4, true, true},
 #endif
-         {NULL, 0, 0, 0, 0, 0, false, false}};
+          {NULL, 0, 0, 0, 0, 0, false, false}
+        };
 
   SDL_DisplayMode dm;
   SDL_GetDesktopDisplayMode(0, &dm);
@@ -272,12 +279,12 @@ void Renderer::showLoadingScreen()
   flip();
 }
 
-SDL_Renderer* Renderer::renderer()
+SDL_Renderer *Renderer::renderer()
 {
   return _renderer;
 }
 
-SDL_Window* Renderer::window()
+SDL_Window *Renderer::window()
 {
   return _window;
 }
@@ -339,7 +346,7 @@ void Renderer::blitPatternAcross(Surface *sfc, int x_dst, int y_dst, int y_src, 
     dstrect.x = x;
     dstrect.y = y;
     SDL_RenderCopy(_renderer, sfc->texture(), &srcrect, &dstrect);
-    x += sfc->width()  * scale;
+    x += sfc->width() * scale;
   } while (x < destwd);
 }
 
@@ -352,9 +359,9 @@ void Renderer::drawLine(int x1, int y1, int x2, int y2, NXColor color)
 void Renderer::drawRect(int x1, int y1, int x2, int y2, uint8_t r, uint8_t g, uint8_t b)
 {
   SDL_Rect rects[4] = {{x1 * scale, y1 * scale, ((x2 - x1) + 1) * scale, scale},
-  {x1 * scale, y2 * scale, ((x2 - x1) + 1) * scale, scale},
-  {x1 * scale, y1 * scale, scale, ((y2 - y1) + 1) * scale},
-  {x2 * scale, y1 * scale, scale, ((y2 - y1) + 1) * scale}};
+                       {x1 * scale, y2 * scale, ((x2 - x1) + 1) * scale, scale},
+                       {x1 * scale, y1 * scale, scale, ((y2 - y1) + 1) * scale},
+                       {x2 * scale, y1 * scale, scale, ((y2 - y1) + 1) * scale}};
 
   SDL_SetRenderDrawColor(_renderer, r, g, b, SDL_ALPHA_OPAQUE);
   SDL_RenderFillRects(_renderer, rects, 4);
@@ -370,11 +377,12 @@ void Renderer::fillRect(int x1, int y1, int x2, int y2, uint8_t r, uint8_t g, ui
   rect.h = ((y2 - y1) + 1) * scale;
 
   SDL_SetRenderDrawColor(_renderer, r, g, b, SDL_ALPHA_OPAQUE);
-  SDL_RenderFillRect(_renderer, &rect);}
+  SDL_RenderFillRect(_renderer, &rect);
+}
 
 void Renderer::tintScreen()
 {
-  SDL_SetRenderDrawBlendMode(_renderer,SDL_BLENDMODE_BLEND);
+  SDL_SetRenderDrawBlendMode(_renderer, SDL_BLENDMODE_BLEND);
   SDL_SetRenderDrawColor(_renderer, 0, 0, 0, 150);
   SDL_RenderFillRect(_renderer, NULL);
 }
@@ -412,7 +420,7 @@ bool Renderer::isClipSet()
 
 void Renderer::clip(SDL_Rect &srcrect, SDL_Rect &dstrect)
 {
-  int w,h;
+  int w, h;
   int dx, dy;
 
   w = dstrect.w;
@@ -482,8 +490,7 @@ void Renderer::clipScaled(SDL_Rect &srcrect, SDL_Rect &dstrect)
 
 void Renderer::saveScreenshot()
 {
-  auto filename = []()
-  {
+  auto filename = []() {
     int iter = 0;
     std::string name;
     do
@@ -497,7 +504,7 @@ void Renderer::saveScreenshot()
     } while (ResourceManager::getInstance()->fileExists(name) && iter < 1000);
     if (ResourceManager::getInstance()->fileExists(name))
     {
-        return std::string();
+      return std::string();
     }
     return name;
   }();
@@ -510,11 +517,11 @@ void Renderer::saveScreenshot()
 
   SDL_Rect viewport;
   SDL_RenderGetViewport(_renderer, &viewport);
-  SDL_Surface* surface = SDL_CreateRGBSurface(0, viewport.w, viewport.h, 24,
+  SDL_Surface *surface = SDL_CreateRGBSurface(0, viewport.w, viewport.h, 24,
 #if SDL_BYTEORDER == SDL_BIG_ENDIAN
-                                 0xff000000, 0x00ff0000, 0x0000ff00, 0x000000ff
+                                              0xff000000, 0x00ff0000, 0x0000ff00, 0x000000ff
 #else
-                                 0x000000ff, 0x0000ff00, 0x00ff0000, 0xff000000
+                                              0x000000ff, 0x0000ff00, 0x00ff0000, 0xff000000
 #endif
   );
 
@@ -540,6 +547,5 @@ void Renderer::saveScreenshot()
   LOG_INFO("Saved {}", filename);
   return;
 }
-
-};
-};
+}; // namespace Graphics
+}; // namespace NXE

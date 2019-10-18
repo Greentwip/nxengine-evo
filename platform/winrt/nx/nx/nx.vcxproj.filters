@@ -363,9 +363,6 @@
     <ClCompile Include="..\..\..\..\src\inventory.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\main.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\map.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -508,6 +505,9 @@
       <Filter>EngineSpecific</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\common\InitList.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\main.cpp">
       <Filter>EngineSpecific</Filter>
     </ClCompile>
   </ItemGroup>
