@@ -1,3 +1,12 @@
+# UWP and Xbox One port
+This project was forked from [NXEngine-evo](https://github.com/nxengine/nxengine-evo) and later
+ported for the UWP by Victor Lopez. As intended, this GitHub fork will also host the Xbox One port.
+
+# SDL
+It was a challenge to obtain and compile the correct UWP SDL libs, it required some modification,
+as those aren't really being updated so if your project needs SDL2 for UWP feel free to grab the
+ones that were ported.
+
 # NXEngine-evo
 A somewhat upgraded/refactored version of [NXEngine](http://nxengine.sourceforge.net/) by Caitlin Shaw.
 
