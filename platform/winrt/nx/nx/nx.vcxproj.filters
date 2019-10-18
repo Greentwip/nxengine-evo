@@ -115,6 +115,9 @@
     <Filter Include="Assets\data\StageMeta">
       <UniqueIdentifier>{63fca96e-984c-4fb5-bc31-c2b47fcf0cef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="EngineSpecific">
+      <UniqueIdentifier>{8b791604-199c-4771-baef-2f9d6e92a315}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\src\ai\ai.cpp">
@@ -193,9 +196,6 @@
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\ai\hell\hell.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\ai\IrregularBBox.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\ai\last_cave\last_cave.cpp">
@@ -312,16 +312,10 @@
     <ClCompile Include="..\..\..\..\src\ai\weed\weed.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\autogen\AssignSprites.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\caret.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\common\glob.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\common\InitList.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\common\misc.cpp">
@@ -336,9 +330,6 @@
     <ClCompile Include="..\..\..\..\src\endgame\credits.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\endgame\CredReader.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\endgame\island.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -351,22 +342,7 @@
     <ClCompile Include="..\..\..\..\src\game.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\graphics\Font.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\graphics\Renderer.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\graphics\Surface.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\graphics\pngfuncs.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\graphics\Sprites.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\graphics\Tileset.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\graphics\zoom.cpp">
@@ -402,9 +378,6 @@
     <ClCompile Include="..\..\..\..\src\object.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\ObjManager.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\pause\dialog.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -435,9 +408,6 @@
     <ClCompile Include="..\..\..\..\src\p_arms.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\ResourceManager.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\screeneffect.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -459,18 +429,6 @@
     <ClCompile Include="..\..\..\..\src\slope.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\sound\Ogg.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\sound\Organya.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\sound\Pixtone.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\sound\SoundManager.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\stageboss.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -480,19 +438,7 @@
     <ClCompile Include="..\..\..\..\src\statusbar.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\TextBox\ItemImage.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\TextBox\SaveSelect.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\src\TextBox\StageSelect.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\TextBox\TextBox.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\src\TextBox\YesNoPrompt.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\trig.cpp">
@@ -501,11 +447,68 @@
     <ClCompile Include="..\..\..\..\src\tsc.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\autogen\AssignSprites.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\graphics\Font.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\endgame\CredReader.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ai\IrregularBBox.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\src\Utils\Logger.cpp">
-      <Filter>Sources</Filter>
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ObjManager.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sound\Ogg.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sound\Organya.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sound\Pixtone.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\graphics\Renderer.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ResourceManager.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\TextBox\SaveSelect.cpp">
+      <Filter>EngineSpecific</Filter>
     </ClCompile>
     <ClCompile Include="..\..\external\SDL\src\main\winrt\SDL_winrt_main_NonXAML.cpp">
-      <Filter>Sources</Filter>
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sound\SoundManager.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\graphics\Sprites.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\graphics\Surface.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\TextBox\TextBox.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\graphics\Tileset.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\TextBox\YesNoPrompt.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\TextBox\ItemImage.cpp">
+      <Filter>EngineSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\InitList.cpp">
+      <Filter>EngineSpecific</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -5354,6 +5357,9 @@
       <Filter>Assets</Filter>
     </Image>
     <Image Include="Assets\Square150x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BadgeLogo.scale-100.png">
       <Filter>Assets</Filter>
     </Image>
   </ItemGroup>

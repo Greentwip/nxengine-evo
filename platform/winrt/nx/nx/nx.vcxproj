@@ -252,6 +252,9 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Image Include="Assets\BadgeLogo.scale-100.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
     <Image Include="Assets\data\endpic\credit01.bmp" />
     <Image Include="Assets\data\endpic\credit01m.bmp" />
     <Image Include="Assets\data\endpic\credit02.bmp" />
