@@ -5345,5 +5345,14 @@
     <Image Include="Assets\data\lang\russian\endpic\pixel.bmp">
       <Filter>Assets\data\lang\russian\endpic</Filter>
     </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
 </Project>
