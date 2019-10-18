@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="75ad1d72-4aa8-4f09-933a-97f74491cff8" Publisher="CN=Greentwip" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="75ad1d72-4aa8-4f09-933a-97f74491cff8" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="59711Greentwip.467810F89AA3A" Publisher="CN=20CC192E-7CE9-4070-8839-E1D1474BB0C4" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="c82e6856-36d0-43ee-9e38-f585f4659502" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>com.greentwip.cavestory</DisplayName>
+    <DisplayName>Cave Story</DisplayName>
     <PublisherDisplayName>Greentwip</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
