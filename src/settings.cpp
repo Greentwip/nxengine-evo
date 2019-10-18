@@ -2,8 +2,8 @@
 #include "settings.h"
 
 #include "ResourceManager.h"
-#include "common/misc.h"
 #include "Utils/Logger.h"
+#include "common/misc.h"
 #include "input.h"
 
 #include <SDL.h>
@@ -60,8 +60,8 @@ static bool tryload(Settings *setfile)
     strncpy(setfile->language, "english", 255);
   }
 
-#if defined(__VITA__) || defined(__SWITCH__)
-    setfile->resolution     = 1;
+#if defined(__VITA__) || defined(__SWITCH__) || (defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP))
+  setfile->resolution = 1;
 #endif
 
   return 0;
@@ -77,22 +77,22 @@ bool settings_load(Settings *setfile)
     LOG_INFO("No saved settings; using defaults.");
 
     memset(setfile, 0, sizeof(Settings));
-#if defined(__VITA__) || defined(__SWITCH__)
-    setfile->resolution     = 1;
+#if defined(__VITA__) || defined(__SWITCH__) || (defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)) // UWP
+    setfile->resolution = 1;
 #else
-    setfile->resolution     = 2; // 640x480 Windowed, should be safe value
+    setfile->resolution = 2; // 640x480 Windowed, should be safe value
 #endif
     setfile->last_save_slot = 0;
     setfile->fullscreen     = false;
 
-    setfile->sound_enabled = true;
-    setfile->music_enabled = 1; // both Boss and Regular music
-    setfile->new_music     = 0;
-    setfile->rumble        = false;
-    setfile->sfx_volume = 100;
-    setfile->music_volume = 100;
+    setfile->sound_enabled     = true;
+    setfile->music_enabled     = 1; // both Boss and Regular music
+    setfile->new_music         = 0;
+    setfile->rumble            = false;
+    setfile->sfx_volume        = 100;
+    setfile->music_volume      = 100;
     setfile->animated_facepics = true;
-    setfile->control_scheme = false;
+    setfile->control_scheme    = false;
     memset(setfile->language, 0, 256);
     strncpy(setfile->language, "english", 255);
 
@@ -105,12 +105,12 @@ bool settings_load(Settings *setfile)
 
   if (settings->control_scheme)
   {
-    ACCEPT_BUTTON = FIREKEY;
+    ACCEPT_BUTTON  = FIREKEY;
     DECLINE_BUTTON = JUMPKEY;
   }
   else
   {
-    ACCEPT_BUTTON = JUMPKEY;
+    ACCEPT_BUTTON  = JUMPKEY;
     DECLINE_BUTTON = FIREKEY;
   }
 

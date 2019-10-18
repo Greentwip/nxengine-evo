@@ -143,7 +143,6 @@ bool Renderer::initVideo()
 #if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP) // UWP
   SDL_RenderSetLogicalSize(_renderer, width, height);
 #endif
-  
 
   LOG_INFO("Renderer::initVideo: using: {} renderer", info.name);
   return true;
@@ -169,7 +168,7 @@ void Renderer::setFullscreen(bool enable)
 
 bool Renderer::setResolution(int r, bool restoreOnFailure)
 {
-#if defined(__VITA__) || defined(__SWITCH__)
+#if defined(__VITA__) || defined(__SWITCH__) || (defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)) // UWP)
   r = 1; // one fixed resolution
 #endif
 
@@ -208,6 +207,10 @@ bool Renderer::setResolution(int r, bool restoreOnFailure)
   recalc_map_offsets();
   textbox.RecalculateOffsets();
 
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP) // UWP
+  SDL_RenderSetLogicalSize(_renderer, width, height);
+#endif
+
   return true;
 }
 
@@ -221,6 +224,8 @@ const Graphics::gres_t *Renderer::getResolutions()
           {(char *)"960x544", 960, 544, 480, 272, 2, true, true},
 #elif defined(__SWITCH__)
           {(char *)"1920x1080", 1920, 1080, 480, 270, 4, true, true},
+#elif defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP) // UWP
+          {(char *)"1024x768", 1024, 768, 340, 256, 3, false, true},
 #else
           {(char *)"320x240", 320, 240, 320, 240, 1, false, true},
           {(char *)"640x480", 640, 480, 320, 240, 2, false, true},
